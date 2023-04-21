@@ -299,3 +299,8 @@ fabric.properties
 .history
 
 # End of https://www.gitignore.io/api/git,django,python,pycharm,visualstudiocode
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

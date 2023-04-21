@@ -25,7 +25,7 @@ SECRET_KEY = 'y5hmuk*-4*%wor)ek2up+w+x!yx8l40j*n93#1zn!p66)k=c#2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['22181946-CPP-env.eba-htibd7y3.eu-west-3.elasticbeanstalk.com']
 
 
 # Application definition
