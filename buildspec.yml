@@ -1,0 +1,19 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      - pip install --upgrade pip
+      - pip install -r requirements.txt pylint # Install dependencies needed for running the static analysis
+  pre_build:
+    commands:
+      - python --version
+      - pylint --disable= $CODEBUILD_SRC_DIR/*.py
+      - pylint --disable=E,R,W,C0103,W0611 $CODEBUILD_SRC_DIR/personal_portfolio/*.py
+      - pylint --disable=E,R,W,E1101 $CODEBUILD_SRC_DIR/portfolio/*.py
+      
+artifacts:
+    files:
+      - '**/*'
