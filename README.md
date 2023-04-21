@@ -15,4 +15,4 @@
 
 git remote set-url origin https://github.com/AchalBhangre/PersonalPortfolioWeb.git
 
-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
+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
